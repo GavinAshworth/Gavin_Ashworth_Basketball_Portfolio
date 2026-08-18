@@ -56,12 +56,77 @@ video {
     border-bottom: 1px solid rgba(217, 217, 211, 0.7);
 }
 
+.pdf-preview {
+    display: block;
+    padding: 20px;
+    background: #e8e8e4;
+}
+
+.pdf-preview img {
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 24, 20, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-preview:hover img {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(15, 24, 20, 0.12);
+}
+
+.media-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project-thumb img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.report-preview {
+    padding: 20px;
+    display: block;
+    background: #e8e8e4;
+}
+
+.report-preview img {
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 24, 20, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-preview:hover img {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(15, 24, 20, 0.12);
+}
+
 .nav-wrap {
     height: 76px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+}
+
+.hero-media {
+    min-height: 550px;
+}
+
+.hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .brand {
